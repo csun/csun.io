@@ -1,0 +1,42 @@
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 1, 3 */
+}
+
+.header,
+.footer {
+  flex: none; /* 2 */
+}
+
+.content {
+  flex: 1 0 auto; /* 2 */
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+.content::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+@media (--break-lg) {
+  .content {
+    padding-top: var(--space-lg);
+  }
+  .content::after {
+    margin-top: var(--space-lg);
+  }
+}
+
+.content--full {
+  padding: 0;
+}
+.content--full::after {
+  content: none;
+}

@@ -5,20 +5,10 @@ $font-stack: 'Open Sans', sans-serif;
 
 $brand-color: #2c8f82;
 $primary-color: #222;
+$secondary-color: #444;
 $background-color: #fff;
 
 $break-small: 480px;
-
-$top-bar-height-lg: 80px;
-$top-bar-height-sm: 60px;
-
-.clearfix:after {
-   content: " ";  /* Older browsers do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
 
 body {
   color: $primary-color;
@@ -26,96 +16,15 @@ body {
   font: 100% $font-stack;
 }
 
-#content {
-	max-width: 800px;
-
-	padding: 60px 40px 0 40px;
-	margin: 0 auto 0 auto;
-
-	@media screen and (max-width: $break-small) {
-		padding: 20px 10px 0 10px;
-		margin: 0 auto 0 auto;
-	}
+a {
+	color: $brand-color;
+	text-decoration: none;
+}
+a:hover {
+	color: $secondary-color;
 }
 
-.top-bar {
-	margin-bottom: $top-bar-height-lg;
-
-	.logo {
-		float: left;
-		color: $brand-color;
-		font-weight: 700;
-
-		font-size: $top-bar-height-lg / 2;
-		line-height: $top-bar-height-lg / 2;
-	}
-
-	.buttons {
-		float: right;
-		word-spacing: 8px;
-		line-height: $top-bar-height-lg;
-		height: $top-bar-height-lg;
-
-		a {
-			display: inline-block;
-			text-align: center;
-			vertical-align: middle;
-
-			color: $primary-color;
-			background-color: $background-color;
-			text-decoration: none;
-
-			border-style: solid;
-			border-width: 2px;
-
-			height: 60px;
-			width: 60px;
-			font-size: 24px;
-			line-height: 62px;
-			border-radius: 9999px;
-		}
-
-		a:hover {
-			color: $background-color;
-			background-color: $brand-color;
-		}
-		a:visited {}
-	}
-
-	@media screen and (max-width: $break-small) {
-		margin-bottom: $top-bar-height-sm;
-
-		font-size: $top-bar-height-sm;
-		line-height: $top-bar-height-sm;
-
-		.logo {
-			font-size: $top-bar-height-sm / 2;
-			line-height: $top-bar-height-sm / 2;
-		}
-
-		.buttons {
-			word-spacing: -10px;
-			line-height: $top-bar-height-sm - 12px;
-			height: $top-bar-height-sm;
-
-			a {
-				height: 30px;
-				width: 30px;
-				font-size: 20px;
-				line-height: 32px;
-			}
-		}
-	}
-}
-
-.written-content {
-	font-size: 24px;
-
-	p {
-		margin-bottom: 40px;
-	}
-
-	@media screen and (max-width: $break-small) {
-		font-size: 20px;
-	}
-}
+@import "sticky_footer";
+@import "top";
+@import "foot";
+@import "index";
