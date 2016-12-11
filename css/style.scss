@@ -8,12 +8,16 @@ $primary-color: #222;
 $secondary-color: #444;
 $background-color: #fff;
 
-$break-small: 480px;
+$breakpoint: 550px;
 
 body {
   color: $primary-color;
   background-color: $background-color;
   font: 100% $font-stack;
+}
+
+p {
+	font-size: 14px;
 }
 
 a {
