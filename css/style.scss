@@ -31,8 +31,11 @@ a:hover {
 
 .page-title {
 	margin-top: 40px;
+	font-size: 40px;
+
 	@media (max-width: $breakpoint) {
 		margin-top: 20px;
+		font-size: 30px;
 	}
 }
 
