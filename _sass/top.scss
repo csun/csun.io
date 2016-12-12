@@ -17,8 +17,8 @@
 		}
 
 		.nav-links {
-			display: flex;
-			flex-direction: column;
+			@include flexbox;
+			@include flex-direction(column);
 
 			a {
 				float: right;
@@ -26,8 +26,8 @@
 			}
 
 			@media (max-width: $breakpoint) {
-				flex-direction: row;
-				justify-content: space-between;
+				@include flex-direction(row);
+				@include justify-content(space-between);
 				margin-top: 20px;
 
 				a {
