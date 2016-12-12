@@ -2,6 +2,7 @@
 ---
 
 $font-stack: 'Open Sans', sans-serif;
+$body-font-size: 14px;
 
 $brand-color: #2c8f82;
 $primary-color: #222;
@@ -17,7 +18,7 @@ body {
 }
 
 p {
-	font-size: 14px;
+	font-size: $body-font-size;
 }
 
 a {
@@ -28,7 +29,15 @@ a:hover {
 	color: $secondary-color;
 }
 
+.page-title {
+	margin-top: 40px;
+	@media (max-width: $breakpoint) {
+		margin-top: 20px;
+	}
+}
+
 @import "sticky_footer";
 @import "top";
 @import "foot";
 @import "index";
+@import "blog";

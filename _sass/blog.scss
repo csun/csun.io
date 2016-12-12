@@ -1,0 +1,23 @@
+.posts-list {
+	margin-top: 10px;
+
+	.post-listing {
+		margin-bottom: 40px;
+
+		.post-title {
+			font-size: 24px;
+		}
+		.post-date {
+			font-size: $body-font-size;
+			font-style: italic;
+		}
+		.post-excerpt {
+			margin-top: 10px;
+		}
+	}
+}
+
+.page-controls {
+	font-size: $body-font-size;
+}
+

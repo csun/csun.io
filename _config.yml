@@ -7,7 +7,7 @@ url: "http://www.csun.io" # the base hostname & protocol for your site
 
 gems: ["jekyll-paginate"]
 
-paginate: 5
+paginate: 4
 paginate_path: "/blog/page:num/"
 
 # Build settings
