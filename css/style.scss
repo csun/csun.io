@@ -21,6 +21,12 @@ p {
 	font-size: $body-font-size;
 }
 
+ul {
+	font-size: $body-font-size;
+	padding-left: 28px;
+	list-style-position: outside;
+}
+
 a {
 	color: $brand-color;
 	text-decoration: none;
