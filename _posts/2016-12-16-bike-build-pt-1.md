@@ -39,5 +39,4 @@ Though the paint stripper got the bulk of the paint off, I still needed to spend
 
 ![](/images/raleigh_post_strip.jpg)
 
-For me, the whole process probably took about 10-20 hours of work spread out across two weeks. The process probably could've been greatly expedited with better (power) tools, as sanding and scraping took a ton of time. If I could do this again and didn't have such a strict requirement to do everything by hand, I probably would've just paid someone to beadblast the frame. Hell, I would've paid someone to paint it too - the whole process was a ton of work. Regardless, it was all worth it in the end. My shiny, stripped frame was ready to be painted!
-
+For me, the whole process probably took about 10-20 hours of work spread out across two weeks. The process probably could've been greatly expedited with better (power) tools, as sanding and scraping took a ton of time. If I could do this again and didn't have such a strict requirement to do everything by hand, I probably would've just paid someone to beadblast the frame. Hell, I would've paid someone to paint it too - the whole process was a ton of work. Regardless, it was all worth it in the end. My shiny, stripped frame was ready to be painted! You can read about the next steps in the painting process [here](/2017/01/06/bike-build-pt-2.html).
