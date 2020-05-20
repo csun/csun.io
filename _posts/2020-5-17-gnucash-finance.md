@@ -3,6 +3,7 @@ layout: post
 title: Simple Personal Finance Tracking with GnuCash
 excerpt: An overview of how I use the open source accounting program GnuCash to manage my finances and generate cool graphs.
 ---
+_*Please see the associated [Hacker News](https://news.ycombinator.com/item?id=23237445) comments for some interesting discussion related to this article.*_
 
 ![](/images/gnucash/ytd_food.png)
 
