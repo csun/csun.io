@@ -9,6 +9,8 @@ excerpt: A collection of images documenting the process of designing and buildin
 
 Pictured above is a finished Ellipsis Split keyboard. The Split is a spiritual successor to the Ellipsis, [my previous attempt at making a custom keyboard](http://localhost:4000/2018/07/16/custom-mechanical-keyboard.html).  
 
+Note: I don't actually have two capslock keys - I just ran out of keycaps that fit lol. In fact, most of the nonstandard keys are mislabeled simply because I just needed keycaps that fit.
+
 The initial design phase for the Split started in early December 2019, and there were a couple breaks here and there for holidays, other projects, work, etc. Designs were sent out to be manufactured early May 2020, and painting / assembly began about two weeks after. The keyboard was finished on June 11th, 2020.
 
 ![](/images/ellipsis_split_buildlog/image13.png){:.img-medium}
