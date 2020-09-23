@@ -7,8 +7,7 @@ excerpt: A collection of images documenting the process of designing and buildin
 ![](/images/ellipsis_split_buildlog/DSC07176.jpg)
 ![](/images/ellipsis_split_buildlog/DSC07177.jpg)
 
-*PCB and Plate files [here](https://github.com/csun/ellipsis_split_files)*
-*Firmware [here](https://github.com/csun/ellipsis_split_firmware)*
+*PCB and Plate files [here](https://github.com/csun/ellipsis_split_files). Firmware [here](https://github.com/csun/ellipsis_split_firmware)*
 
 Pictured above is a finished Ellipsis Split keyboard. The Split is a spiritual successor to the Ellipsis, [my previous attempt at making a custom keyboard](/2018/07/16/custom-mechanical-keyboard.html).  
 
