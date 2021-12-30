@@ -1,8 +1,7 @@
 ---
 ---
-
 $font-stack: 'Open Sans', sans-serif;
-$body-font-size: 14px;
+$body-font-size: 16px;
 
 $brand-color: #2c8f82;
 $primary-color: #222;
@@ -51,4 +50,5 @@ a:hover {
 @import "foot";
 @import "index";
 @import "blog";
-@import "post"
+@import "post";
+@import "video";

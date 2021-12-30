@@ -18,20 +18,22 @@
 
 		.nav-links {
 			@include flexbox;
-			@include flex-direction(column);
+			@include flex-direction(row);
+            @include justify-content(flex-end);
 
 			a {
 				float: right;
-				font-size: 20px;
+                padding-right: 20px;
+				font-size: 40px;
 			}
 
 			@media (max-width: $breakpoint) {
 				@include flex-direction(row);
-				@include justify-content(space-between);
+				@include justify-content(left);
 				margin-top: 20px;
 
 				a {
-					font-size: 16px;
+					font-size: 24px;
 				}
 			}
 		}
