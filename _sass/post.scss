@@ -7,11 +7,6 @@
 		font-style: italic;
 	}
 
-    .video-player {
-        display: block;
-        margin: 8px auto 30px auto;
-    }
-
 	h1 {
 		font-size: 30px;
 		margin-top: 30px;
@@ -20,8 +15,8 @@
 
 	img {
 		width: 100%;
-        margin-top: 8px;
-        margin-bottom: 8px;
+        margin-top: 12px;
+        margin-bottom: 12px;
 	}
 
     .img-medium {
@@ -38,8 +33,10 @@
         margin-right: auto;
     }
 
-    #rss-icon {
-        font-size: $body-font-size + 4;
-        margin-left: 4px;
+    .img-caption {
+        text-align: center;
+        font-size: $body-font-size - 2;
+        font-style: italic;
+        margin-bottom: 40px;
     }
 }
