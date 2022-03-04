@@ -2,11 +2,13 @@
 layout: post
 title: How I See Numbers
 ---
+_*Please see the associated [Hacker News comments](https://news.ycombinator.com/item?id=30539292) for some interesting discussion related to this article.*_
+
 When doing any sort of mental arithmetic or visualization of quantities, I picture numbers as shapes. In my head, operations like addition and subtraction manifest themselves as physical interaction between these shapes, and are complete with sounds and tactile feelings.
 
 It only struck me recently that this might not be how most people experience numbers. In fact, this document is my first ever attempt to communicate this information with someone else. It was surprisingly difficult for me to represent the shapes and sensations given that I can conjure them so easily within my own head, but hopefully the following combination of drawings and words gets the point across.
 
-One, like its written form, is just a line. It's solid and indivisible. Two is a pair of ones, stuck to one another by a sort of invisible force. This force is quite strong. If overcome, the component ones can be peeled cleanly apart - like separating slices two slices of Kraft singles that have been stuck together (weird analogy, but that's exactly how it feels.)
+One, like its written form, is just a line. It's solid and indivisible. Two is a pair of ones, stuck to one another by a sort of invisible force. This force is quite strong. If overcome, the component ones can be peeled cleanly apart - like separating two slices of Kraft singles that have been stuck together (weird analogy, but that's exactly how it feels.)
 
 ![](/images/how_i_see_numbers/numbers_1.jpg){:.img-small}
 
