@@ -1,10 +1,10 @@
 ---
 ---
 $font-stack: 'Open Sans', sans-serif;
-$body-font-size: 16px;
+$body-font-size: 18px;
 
 $brand-color: #2c8f82;
-$primary-color: #222;
+$primary-color: #000;
 $secondary-color: #444;
 $background-color: #fff;
 
@@ -16,8 +16,8 @@ body {
   font: 100% $font-stack;
 }
 
-p {
-	font-size: $body-font-size;
+p, .post-excerpt {
+    font-size: $body-font-size;
 }
 
 ul {
