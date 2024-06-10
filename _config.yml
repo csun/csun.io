@@ -1,7 +1,7 @@
 # Site settings
 title: Cameron Sun
 description: > # this means to ignore newlines until "baseurl:"
-  The personal website of Cameron Sun.
+  The personal blog of Cameron Sun, a software engineer who lives in Seattle.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.csun.io" # the base hostname & protocol for your site
 

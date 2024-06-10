@@ -25,21 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-rss-square:before {
-  content: "\e903";
+.icon-linkedin-square:before {
+  content: "\e900";
 }
 .icon-github-square:before {
   content: "\e901";
 }
-.icon-twitter-square:before {
-  content: "\e900";
-}
-.icon-envelope-o:before {
+.icon-rss-square:before {
   content: "\e902";
 }
-.icon-instagram:before {
-  content: "\ea92";
-}
-.icon-github:before {
-  content: "\eab0";
+.icon-twitter-square:before {
+  content: "\e903";
 }
