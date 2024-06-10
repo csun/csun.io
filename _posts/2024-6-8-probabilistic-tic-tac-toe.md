@@ -10,7 +10,7 @@ excerpt: Tic-Tac-Toe reimagined as a game of chance.
 }
 </style>
 
-<iframe id="pttt-iframe" class="generic-embed" frameborder="0" src="https://itch.io/embed-upload/10629133?color=FFFAF2" allowfullscreen="" width="100%" height="920"><a href="https://cameronsun.itch.io/probabilistic-tic-tac-toe">Play Probabilistic Tic-Tac-Toe on itch.io</a></iframe>
+<iframe id="pttt-iframe" frameborder="0" src="https://itch.io/embed-upload/10641518?color=FFFAF1" allowfullscreen="" width="100%" height="920"><a href="https://cameronsun.itch.io/probabilistic-tic-tac-toe">Play Probabilistic Tic-Tac-Toe on itch.io</a></iframe>
 
 ## Instructions
 The rules are the same as normal tic-tac-toe, but each square has a different probability of a good (smiley face), neutral (meh face), or bad (frowny face) event happening when selected.
