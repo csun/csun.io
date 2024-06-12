@@ -3,7 +3,8 @@ layout: post
 title: How I See Numbers
 excerpt: When doing any sort of mental arithmetic or visualization of quantities, I picture numbers as shapes. In my head, operations like addition and subtraction manifest themselves as physical interaction between these shapes, and are complete with sounds and tactile feelings.
 ---
-_*Please see the associated [Hacker News comments](https://news.ycombinator.com/item?id=30539292) for some interesting discussion related to this article.*_
+Please see the associated [Hacker News comments](https://news.ycombinator.com/item?id=30539292) for some interesting discussion related to this article.
+{:.comments-leader}
 
 When doing any sort of mental arithmetic or visualization of quantities, I picture numbers as shapes. In my head, operations like addition and subtraction manifest themselves as physical interaction between these shapes, and are complete with sounds and tactile feelings.
 
