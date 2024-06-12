@@ -3,6 +3,8 @@ layout: post
 title: Probabilistic Tic-Tac-Toe
 excerpt: Tic-Tac-Toe reimagined as a game of chance.
 ---
+Please see the associated [Hacker News comments](https://news.ycombinator.com/item?id=40635397) for discussion related to this game, [including an algorithm for optimal play](https://louisabraham.github.io/articles/probabilistic-tic-tac-toe) presented by [Louis Abraham](https://louisabraham.github.io/).
+{:.comments-leader}
 
 <style>
 #pttt-iframe {
@@ -19,6 +21,11 @@ Good events place your mark (X or O) in the square. Bad events place your oppone
 
 Click in the top right to switch between playing against the CPU and local two player mode.
 
+Click in the top left to choose between 1x, 2x, and 3x speed for animations.
+
+## Attribution and Source
+[Project source is available here](https://github.com/csun/probabilistic-tic-tac-toe)
+
 Icons by [Font Awesome](https://fontawesome.com/icons)
 
 Font is [Multicolore](https://www.dafont.com/multicolore.font)
@@ -31,5 +38,7 @@ So what does this have to do with the children's game embedded into this blog po
 Well, in any given game of Probabilistic Tic-Tac-Toe you can do everything right and still lose (or do everything wrong and win.) However, the better player always rises to the top over time. These are characteristics that I find interesting about a lot of other games, and I thought they'd be fun to apply to an otherwise boring, solved game like tic-tac-toe. They're also highly relevant to my life philosophy - that every outcome is effectively random, but our actions can often skew the odds in our favor. Bad breaks are inevitable, but good judgment is always rewarded (eventually, and given enough chances.)
 
 If there's an optimal, human-executable strategy for this game, it's not immediately obvious to me. A computer could probably do an exhaustive search and play optimally, but the AI I implemented is only based on simple heuristics. Over 10k trials it beat a completely random actor about 70% of the time. Over ~50 trials I beat the AI about 60% of the time.
+
+_Edit: the game has indeed been solved - [see here for more info](https://louisabraham.github.io/articles/probabilistic-tic-tac-toe)_
 
 Enjoy!

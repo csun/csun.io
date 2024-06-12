@@ -49,6 +49,11 @@
         margin-right: auto;
     }
 
+    .comments-leader {
+        font-size: $body-font-size - 4;
+        font-style: italic;
+    }
+
     .img-caption {
         text-align: center;
         font-size: $body-font-size - 2;
