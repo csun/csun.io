@@ -23,7 +23,7 @@ Click in the top left to choose between 1x, 2x, and 3x speed for animations.
 
 Click in the top right to go to the settings menu. Here you can switch between singleplayer and multiplayer modes, choose the difficulty, and enable tutor mode. On impossible difficulty, the computer will play mathematically optimally. As such, it will always get more wins than you over the course of many (tens to hundreds of) games. You will be able to beat it occasionally though.
 
-Tutor mode makes it so that the estimated maximum possible win probabilities for a given square are shown when highlighted. This uses the same solver that is used by the impossible difficulty AI.
+Tutor mode is designed to give an insight into what the impossible AI thinks about each move. When hovering over a square in tutor mode, it shows the probability of winning the game given that you a) select that square and b) continue to play optimally for the rest of the game.
 
 ## Attribution and Source
 [Project source is available here](https://github.com/csun/probabilistic-tic-tac-toe)
