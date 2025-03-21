@@ -1,15 +1,18 @@
 ---
 layout: post
 title: Ellipsis Split Mechanical Keyboard Buildlog
-excerpt: A collection of images documenting the process of designing and building a custom split mechanical keyboard.
+permalink: /2020/06/14/ellipsis-split-buildlog.html
+excerpt: The 2nd iteration of my Ellipsis series of keyboards.
+category: keyboards
 ---
+
 ![](/images/ellipsis_split_buildlog/DSC07163.jpg)
 ![](/images/ellipsis_split_buildlog/DSC07176.jpg)
 ![](/images/ellipsis_split_buildlog/DSC07177.jpg)
 
-*PCB and Plate files [here](https://github.com/csun/ellipsis_split_files). Firmware [here](https://github.com/csun/ellipsis_split_firmware)*
+_PCB and Plate files [here](https://github.com/csun/ellipsis_split_files). Firmware [here](https://github.com/csun/ellipsis_split_firmware)_
 
-Pictured above is a finished Ellipsis Split keyboard. The Split is a spiritual successor to the Ellipsis, [my previous attempt at making a custom keyboard](/2018/07/16/custom-mechanical-keyboard.html).  
+Pictured above is a finished Ellipsis Split keyboard. The Split is a spiritual successor to the Ellipsis, [my previous attempt at making a custom keyboard](/2018/07/16/custom-mechanical-keyboard.html).
 
 Note: I don't actually have two capslock keys - I just ran out of keycaps that fit lol. In fact, most of the nonstandard keys are mislabeled simply because I just needed keycaps that fit.
 
@@ -63,7 +66,7 @@ You can see here that the connector I used to attach the screen to the main boar
 
 ![](/images/ellipsis_split_buildlog/IMG_20200612_022617.jpg){:.img-medium}
 
-The screen is mounted to the bottom plate, whereas the PCB itself is mounted to the top plate. This is what necessitated the use of the connector that caused the clearance issues in the first place. There's enough clearance for the screen to be soldered directly onto the PCB, but I had a breakout board version - hence why there's a big cutout in the main PCB. 
+The screen is mounted to the bottom plate, whereas the PCB itself is mounted to the top plate. This is what necessitated the use of the connector that caused the clearance issues in the first place. There's enough clearance for the screen to be soldered directly onto the PCB, but I had a breakout board version - hence why there's a big cutout in the main PCB.
 
 ![](/images/ellipsis_split_buildlog/IMG_20200612_024244.jpg){:.img-medium}
 
@@ -76,9 +79,9 @@ Finished product - just before scavenging the keycaps from my old keyboard.
 
 I use the screen to indicate:
 
-* Mac vs Windows mode - changes my bound hotkeys (eg. fn-q is cmd-q on Mac, alt-f4 on windows).
-* If the raise / lower fn keys are depressed.
-* Whether the thumb clusters are in normal mode, game mode (moves the space bar to the left and adds a bindable f-key), or all spaces mode (so that a regular person can type without having to learn all the keys).
-* Caps / Numlock.
+- Mac vs Windows mode - changes my bound hotkeys (eg. fn-q is cmd-q on Mac, alt-f4 on windows).
+- If the raise / lower fn keys are depressed.
+- Whether the thumb clusters are in normal mode, game mode (moves the space bar to the left and adds a bindable f-key), or all spaces mode (so that a regular person can type without having to learn all the keys).
+- Caps / Numlock.
 
 That's it!

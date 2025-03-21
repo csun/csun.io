@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Probabilistic Tic-Tac-Toe
+permalink: /2024/06/08/probabilistic-tic-tac-toe.html
 excerpt: Tic-Tac-Toe reimagined as a game of chance.
+category: interactive
 ---
+
 Please see the associated [Hacker News comments](https://news.ycombinator.com/item?id=40635397) for discussion related to this game, [including an algorithm for optimal play](https://louisabraham.github.io/articles/probabilistic-tic-tac-toe) presented by [Louis Abraham](https://louisabraham.github.io/).
 {:.comments-leader}
 
@@ -15,6 +18,7 @@ Please see the associated [Hacker News comments](https://news.ycombinator.com/it
 <iframe id="pttt-iframe" frameborder="0" src="https://itch.io/embed-upload/10669100?color=FFFAF1" allowfullscreen="" width="100%" height="920"><a href="https://cameronsun.itch.io/probabilistic-tic-tac-toe">Play Probabilistic Tic-Tac-Toe on itch.io</a></iframe>
 
 ## Instructions
+
 The rules are the same as normal tic-tac-toe, but each square has a different probability of a good (smiley face), neutral (meh face), or bad (frowny face) event happening when selected.
 
 Good events place your mark (X or O) in the square. Bad events place your opponent's mark. Neutral events do nothing but pass the turn to the opponent.
@@ -26,6 +30,7 @@ Click in the top right to go to the settings menu. Here you can switch between s
 Tutor mode is designed to give an insight into what the impossible AI thinks about each move. When hovering over a square in tutor mode, it shows the probability of winning the game given that you a) select that square and b) continue to play optimally for the rest of the game.
 
 ## Attribution and Source
+
 [Project source is available here](https://github.com/csun/probabilistic-tic-tac-toe)
 
 Icons by [Font Awesome](https://fontawesome.com/icons)
@@ -33,6 +38,7 @@ Icons by [Font Awesome](https://fontawesome.com/icons)
 Font is [Multicolore](https://www.dafont.com/multicolore.font)
 
 ## Thoughts
+
 I spend a lot of time thinking about the role of random chance in our lives. Which of our successes can we take credit for and which do we owe to luck? And even when things seem clear-cut, what about all the other factors we have no control over? The parents we're born to, societal power structures, the meteor that killed the dinosaurs - so many past events have an invisible impact on each new action we take. So what gives us the right to claim responsibility for our victories? Do we ever truly win? Or do we just get lucky sometimes?
 
 So what does this have to do with the children's game embedded into this blog post?
@@ -44,9 +50,11 @@ If there's an optimal, human-executable strategy for this game, it's not immedia
 Enjoy!
 
 ## Optimal Solver Update - June 6th 2024
+
 The game has been solved by [Louis Abraham.](https://louisabraham.github.io/articles/probabilistic-tic-tac-toe) I'm not sure if others have come up with similar solutions independently, but Louis was the one who helped me implement the optimal solver (dubbed "Impossible" difficulty) into the game.
 
 I ran a couple tests of its strength:
+
 - In 40 trials against me, the optimal solver won 50% of the time and tied 12.5%.
 - In ~750 trials against a random actor, the optimal solver won 71.2% of the time and tied 4.1% of the time.
 - In ~800 trials against the regular AI, the optimal solver won 59.5% of the time and tied 7.5% of the time.

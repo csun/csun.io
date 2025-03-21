@@ -1,7 +1,11 @@
 ---
 layout: post
-title: Expected Wins - Blaming Fantasy Sports Failure on Bad Luck
+title: Expected Wins in Fantasy Sports
+permalink: /2024/02/09/expected-wins-fantasy.html
+excerpt: Blaming failure on bad luck.
+category: other
 ---
+
 I'm in a fantasy soccer league with some guys who spend more time complaining about the game than actually strategizing about how to play it. The crux of the problem is that results are heavily influenced by matchups. Even if you outscore all but one of the other players in your league, you'll still lose if that higher scoring player happens to be your opponent for the week. On the flip side, you can score terribly during a week and still record a win purely because you're lucky enough to play against a worse team. This element of chance makes for an easy scapegoat when you lose. When you win, though, your opponents will use it to bring up various stats that "prove" that you didn't deserve to.
 
 Two of the most frequently referenced stats are the total amount of points scored by (for) or against a team over the course of a season. It's often the case that the league leader has a much lower Points Against total than anyone else. This tends to be interpreted as a sign that the league is rigged in favor of easier matchups for a certain person. However, I'd argue that Points Against is a misleading metric. The highest performing teams in the league only have to play against lower performers, naturally leading to fewer points scored against them. A low Points Against total can just be a sign that a team is performing well relative to others, not the cause of the high performance itself.

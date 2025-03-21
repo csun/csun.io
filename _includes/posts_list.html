@@ -1,0 +1,16 @@
+<div class="posts-list">
+  <h3>{{ include.heading }}</h3>
+  {% for post in site.posts %}
+    {% if post.category == include.category %}
+      <div class="post-listing">
+        <div class="post-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="post-date">{{ post.date | date: '%B %d, %Y' }}</div>
+        <div class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
