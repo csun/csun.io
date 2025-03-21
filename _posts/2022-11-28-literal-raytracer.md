@@ -3,7 +3,7 @@ layout: post
 thumbnail: /images/literal_raytracer/thumbnail.jpg
 title: Literal Raytracing
 permalink: /2022/11/28/literal-raytracer.html
-excerpt: Visualizing light's path through space.
+description: Rendering light's path through space.
 category: visual
 ---
 

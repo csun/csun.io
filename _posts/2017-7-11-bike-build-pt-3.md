@@ -2,7 +2,7 @@
 layout: post
 title: Building My Bike Part 3
 permalink: /2017/07/11/bike-build-pt-3.html
-excerpt: Choosing components and assembling the bike.
+description: Choosing components and assembling the bike.
 category: other
 ---
 

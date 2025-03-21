@@ -2,7 +2,7 @@
 layout: post
 title: Converting a Guitar Effects Pedal to Output MIDI
 permalink: /2017/08/25/midi-guitar-pedal.html
-excerpt: ""
+description: Turning garbage into slightly better garbage.
 category: other
 ---
 

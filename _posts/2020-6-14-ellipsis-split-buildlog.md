@@ -2,7 +2,7 @@
 layout: post
 title: Ellipsis Split Mechanical Keyboard Buildlog
 permalink: /2020/06/14/ellipsis-split-buildlog.html
-excerpt: The 2nd iteration of my Ellipsis series of keyboards.
+description: The 2nd iteration of my Ellipsis series of keyboards.
 category: keyboards
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Simple Personal Finance Tracking with GnuCash
 permalink: /2020/05/17/gnucash-finance.html
-excerpt: How I use the GnuCash to manage my finances and generate cool graphs.
+description: How I use the GnuCash to manage my finances and generate cool graphs.
 category: other
 ---
 

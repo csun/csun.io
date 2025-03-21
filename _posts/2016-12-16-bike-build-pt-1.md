@@ -2,7 +2,7 @@
 layout: post
 title: Building My Bike Part 1
 permalink: /2016/12/16/bike-build-pt-1.html
-excerpt: Project vision and prepping the frame.
+description: Project vision and prepping the frame.
 category: other
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Ellipsis Split V2
 permalink: /2023/03/02/ellipsis-split-v2.html
-excerpt: The 3rd iteration of my Ellipsis series of keyboards.
+description: The 3rd iteration of my Ellipsis series of keyboards.
 category: keyboards
 ---
 

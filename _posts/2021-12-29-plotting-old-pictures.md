@@ -2,7 +2,7 @@
 layout: post
 title: "Generative Art: Pen Plotting an Old Family Photo"
 permalink: /2021/12/29/plotting-old-pictures.html
-excerpt: Turning family history into art with vectorization.
+description: Turning family history into art.
 category: visual
 ---
 

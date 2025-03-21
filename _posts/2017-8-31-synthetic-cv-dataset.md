@@ -2,7 +2,7 @@
 layout: post
 title: Generating Synthetic Computer Vision Training Data
 permalink: /2017/08/31/synthetic-cv-dataset.html
-excerpt: A small project using Blender.
+description: Experimenting with scripting in Blender.
 category: visual
 ---
 

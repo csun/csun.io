@@ -2,7 +2,7 @@
 layout: post
 title: Building My Bike Part 2
 permalink: /2017/01/06/bike-build-pt-2.html
-excerpt: Painting a bike with a brush.
+description: Painting a bike with a brush.
 category: other
 ---
 

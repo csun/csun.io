@@ -2,7 +2,7 @@
 layout: post
 title: Expected Wins in Fantasy Sports
 permalink: /2024/02/09/expected-wins-fantasy.html
-excerpt: Blaming failure on bad luck.
+description: Blaming failure on bad luck.
 category: other
 ---
 

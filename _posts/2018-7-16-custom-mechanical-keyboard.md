@@ -2,7 +2,7 @@
 layout: post
 title: Building a (Very) Custom Mechanical Keyboard
 permalink: /2018/07/16/custom-mechanical-keyboard.html
-excerpt: The 1st iteration of the Ellipsis series of keyboards.
+description: The 1st iteration of the Ellipsis series of keyboards.
 category: keyboards
 ---
 

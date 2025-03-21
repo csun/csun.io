@@ -2,7 +2,7 @@
 layout: post
 title: Probabilistic Tic-Tac-Toe
 permalink: /2024/06/08/probabilistic-tic-tac-toe.html
-excerpt: Tic-Tac-Toe reimagined as a game of chance.
+description: A classic reimagined as a game of chance.
 category: interactive
 ---
 

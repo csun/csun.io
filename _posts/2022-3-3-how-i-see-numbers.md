@@ -2,7 +2,7 @@
 layout: post
 title: How I See Numbers
 permalink: /2022/03/03/how-i-see-numbers.html
-excerpt: A mental arithmetic quirk.
+description: A mental arithmetic quirk.
 category: visual
 ---
 
