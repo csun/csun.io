@@ -1,8 +1,11 @@
 ---
 layout: post
 title: How I See Numbers
-excerpt: When doing any sort of mental arithmetic or visualization of quantities, I picture numbers as shapes. In my head, operations like addition and subtraction manifest themselves as physical interaction between these shapes, and are complete with sounds and tactile feelings.
+permalink: /2022/03/03/how-i-see-numbers.html
+description: A mental arithmetic quirk.
+category: visual
 ---
+
 Please see the associated [Hacker News comments](https://news.ycombinator.com/item?id=30539292) for some interesting discussion related to this article.
 {:.comments-leader}
 
@@ -38,4 +41,4 @@ And that's all that I've got - hopefully this has been interesting! I find it fu
 
 On the other hand, maybe you've been nodding along this whole time going "yup, that's exactly how I see numbers too!" and none of this is a surprise to you.
 
-Actually, that scares me a hell of a lot more. I prefer to believe that we all see things a little differently :) 
+Actually, that scares me a hell of a lot more. I prefer to believe that we all see things a little differently :)

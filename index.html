@@ -1,35 +1,12 @@
 ---
 layout: default
 redirect_from:
-    - /about
-    - /blog
-    - /contact
+  - /about
+  - /blog
+  - /contact
 ---
 
-<div class="posts-list">
-	{% for post in paginator.posts %}
-		<div class="post-listing">
-			<div class="post-title">
-				<a href="{{ post.url }}">{{ post.title }}</a>
-			</div>
-			<div class="post-date">{{ post.date | date: '%B %d, %Y' }}</div>
-			<div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords:100 }}</div>
-		</div>
-	{% endfor %}
-</div>
-
-<div class="page-controls">
-	{% if paginator.previous_page %}
-	<a href="{{ paginator.previous_page_path }}">Previous</a>
-	{% endif %}
-
-	{% if paginator.previous_page and paginator.next_page %}
-	|
-	{% endif %}
-
-
-	{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path }}">Next</a>
-	{% endif %}
-</div>
-
+{% include posts_list.html heading="Interactive" category="interactive" %}
+{% include posts_list.html heading="Visual" category="visual" %}
+{% include posts_list.html heading="Keyboards" category="keyboards" %}
+{% include posts_list.html heading="Other" category="other" %}

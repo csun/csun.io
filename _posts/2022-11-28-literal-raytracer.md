@@ -1,16 +1,19 @@
 ---
 layout: post
 thumbnail: /images/literal_raytracer/thumbnail.jpg
-title: Literal Raytracing - Visualizing Light's Path Through Space
-excerpt: When we perceive light, we're actually experiencing photons striking us directly in the eye. Conversely, we cannot perceive photons that do not hit us in the eye. But what if we could change that? What would it look like if we could see light's path as it flies through the air?
+title: Literal Raytracing
+permalink: /2022/11/28/literal-raytracer.html
+description: Rendering light's path through space.
+category: visual
 ---
+
 In a sense, we can't actually see light.
 
 Bear with me here.
 
 Imagine turning on a flashlight and pointing it at the night sky. An uncountable number of photons stream out of the bulb every second, but you can't actually observe them directly. It may be hard to even tell that the light is on. Place your hand in the path of the beam, though, and you'll see a very clear bright spot where the light strikes your skin.
 
-When we perceive light, we're actually experiencing photons striking us directly in the eye. Conversely, we *cannot* perceive photons that do not hit us in the eye. That's why you can't see a flashlight beam that's shining away from you, but you can see its light bouncing off of other objects (like your hand.) In particularly dusty / foggy environments you may actually be able to see a light shafts, but only because there are particles in the air scattering photons into your eye.
+When we perceive light, we're actually experiencing photons striking us directly in the eye. Conversely, we _cannot_ perceive photons that do not hit us in the eye. That's why you can't see a flashlight beam that's shining away from you, but you can see its light bouncing off of other objects (like your hand.) In particularly dusty / foggy environments you may actually be able to see a light shafts, but only because there are particles in the air scattering photons into your eye.
 
 But what if we could change that? What would it look like if we could see light's path as it flies through the air? To find out, I built a computer simulation. You can see some of its output below.
 
@@ -21,7 +24,8 @@ But what if we could change that? What would it look like if we could see light'
 In this post, I'll give an overview of how this simulation works, as well as some demonstrations of how different material properties affect the way objects interact with light.
 
 # Implementation Overview
-As you may have guessed from the title, the simulation is essentially just a [raytracer](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) built using [Unity](https://unity.com/) (disclaimer: I work there.) However, instead of sampling the rays that strike each pixel of the camera sensor like a traditional raytracer, this simulation renders the entire path of each cast ray (literally "tracing" the ray. Get it?)
+
+As you may have guessed from the title, the simulation is essentially just a [raytracer](<https://en.wikipedia.org/wiki/Ray_tracing_(graphics)>) built using [Unity](https://unity.com/) (disclaimer: I work there.) However, instead of sampling the rays that strike each pixel of the camera sensor like a traditional raytracer, this simulation renders the entire path of each cast ray (literally "tracing" the ray. Get it?)
 
 The main simulation loop can be broken up into three main steps: raycasting, tracing, and rendering.
 
@@ -35,21 +39,24 @@ Finally, rendering the image is as simple as taking the output of the tracing st
 
 Here's an example of a simulation running slowly, casting a single ray at a time. I've overlayed a faint image of what the scene looks like with a "normal" camera so that you can see what all the rays are bouncing off of. Note that the "normal" view has had an extra light added to it so that objects are visible - in the actual simulation scene, it's just a light in the bottom left, along with two cubes and a monkey head.
 
-{% include autoplay_mp4.html path='/videos/literal_raytracer/monkey_single.mp4' %} 
+{% include autoplay_mp4.html path='/videos/literal_raytracer/monkey_single.mp4' %}
 
 And here's the same simulation sped up and casting multiple rays per simulation step:
 
-{% include autoplay_mp4.html path='/videos/literal_raytracer/monkey_multi.mp4' %} 
+{% include autoplay_mp4.html path='/videos/literal_raytracer/monkey_multi.mp4' %}
 
 One thing worth noting is the way that overlapping rays are blended. For most of this simulation, I tried to stick to physical precedent, but there isn't really one here. Are light rays solid? Translucent? Do they have a thickness? The method I ended up using is essentially a per-pixel weighted average of all the rays that have passed through it, but it would be interesting to try some different blending algorithms to see how things are affected.
 
 # Material Properties
+
 For me, the most interesting part about this project was learning about how different materials reflect light. In school, you're taught that ["the angle of incidence equals the angle of reflection"](https://farside.ph.utexas.edu/teaching/316/lectures/node127.html#:~:text=The%20law%20of%20reflection%20states,the%20normal%20to%20the%20mirror.) - but there's much more that goes into creating realistic computer graphics.
 
 ## Color
+
 The simplest and most obvious property is material color. Physical materials reflect different wavelengths (colors) of light at different rates. To simulate this, our virtual materials define a "base color". When a ray strikes an object, the color of the reflected ray is set to the base color multiplied by the color of the incident ray. The logic here changes a bit for non-metals, but we'll get to that in a later section.
 
 ## Roughness
+
 In the real world, even seemingly flat surfaces have tons of microscopic scratches and ridges. These little peaks and valleys change the angle of incidence of any given ray, meaning that a reflected ray may end up shooting in a direction that's not exactly mirrored about the overall surface normal.
 
 ![](/images/literal_raytracer/roughness_pbr.png)
@@ -59,7 +66,7 @@ Source - [Adobe PBR Guide](https://substance3d.adobe.com/tutorials/courses/the-p
 
 In the above image, you can see an example of this effect. Though the surface of the sphere is macroscopically smooth, the microscopic ridges cause the incoming rays (orange arrows) to be reflected in somewhat unpredictable directions (green arrows). This is why the reflections of the clouds and scenery on the red sphere are a bit murky rather than being clearly defined. The surface roughness adds a bit of "fuzziness" to the sphere's reflections, blurring sharp lines and features.
 
-{% include autoplay_mp4.html path='/videos/literal_raytracer/high_roughness.mp4' %} 
+{% include autoplay_mp4.html path='/videos/literal_raytracer/high_roughness.mp4' %}
 
 Here you can see how a rough, golden, metallic plate is modelled in the simulation. During the raycasting step, some gaussian noise is applied to the surface normal at each ray contact point. This causes the reflected rays to scatter randomly - much like the reflected rays shown in the previous diagram.
 
@@ -67,7 +74,7 @@ Here you can see how a rough, golden, metallic plate is modelled in the simulati
 
 If we superimpose two hypothetical observers onto the simulation, we can reason about how each of they each perceive the reflection from the rough plate. Observer A is situated right along the path of the "ideal" reflection (where the angle of incidence equals the angle of reflection). As such, they experience a bright and wide golden reflection from the plate. Observer B is positioned at a lower angle, on the fringes where fewer rays are scattered. Therefore, Observer B will see a much dimmer reflection than Observer A.
 
-{% include autoplay_mp4.html path='/videos/literal_raytracer/low_roughness.mp4' %} 
+{% include autoplay_mp4.html path='/videos/literal_raytracer/low_roughness.mp4' %}
 
 Here's the same simulation, but with a perfectly polished blue metal plate. Because there's no surface roughness at all, each ray is reflected perfectly such that its angle equals the angle of incidence. This results in a very tight, focused beam of reflected light.
 
@@ -83,6 +90,7 @@ Observer B, on the other hand, cannot see any reflection at all. Because the ref
 We can see that everything is exactly as predicted from our simulation - wide, fuzzy reflections from the rough plate that are dimmer from Observer B's position, and a hyper focused reflection from the smooth plate that disappears entirely for Observer B.
 
 ## Metalness
+
 Note that up until this point, we've only been talking about metallic materials. That's because there's a fundamental difference between the way that metals and non-metals interact with light.
 
 To understand why, imagine turning on a flashlight and putting a piece of aluminum foil over the bulb. No light will escape. Do the same with a sheet of wax paper, though, and you'll be able to see light shining through - even though the two materials are roughly the same thickness. This is because metals fully absorb all the light that they don't reflect, whereas nonmetals can allow light pass through. Of course, most objects we see are not as thin as a piece of paper, but this principle still holds. Thick, non-metallic objects allow light to penetrate the surface at a microscopic level. This seemingly minor effect is primarily responsible for the visible differences between metals and non-metals.
@@ -96,13 +104,14 @@ The above diagram portrays light striking a non-metal. The rays labeled "Specula
 
 The main difference between metals and non-metals lies in the rays labeled "Diffuse". Notice how the incident ray in the diagram actually penetrates the surface of the material. When a ray penetrates like this, it bounces around on the material's constituent particles until it's either fully absorbed as heat, or until it manages to bounce back out of the surface of the material and into the environment. If a ray manages to exit the material's surface, we can assume that it has bounced around so much that it's effectively travelling in a new, random direction.
 
-{% include autoplay_mp4.html path='/videos/literal_raytracer/metalness.mp4' %} 
+{% include autoplay_mp4.html path='/videos/literal_raytracer/metalness.mp4' %}
 
 Here's a simulation of lights striking a pink plastic plate (left), and a white metal plate (right.) The first thing you'll probably notice is that the light striking the pink plastic is being sprayed haphazardly all around, whereas the light striking the metal is sent in a very specific direction. This is because the plastic is non-metallic. Incident light is able to penetrate its surface, bounce around, and diffuse in completely random directions. The metal, on the other hand, absorbs all light that isn't immediately reflected, and is therefore only able to produce a specular reflection. The implication for observers is that the pink rays from the plastic can be seen from all angles, and are a relatively even brightness regardless of viewer position. On the other hand, metal varies wildly in brightness based on how close an observer's eyes are to the center of the specular reflection.
 
 It's worth pointing out that non-metals still create specular reflections. In fact, you can see this in the simulation. The slightly brighter orange streak in the bottom left is the plastic's specular reflection, and an observer looking directly at those rays would see a bright spot (just as we saw in the metallic examples.) This is why some materials (polished marble, glossy plastic) can still look "shiny" while still being distinctly non-metallic. If you can reduce a material's surface roughness enough, it'll develop the same sharp, specular highlights that polished metals have.
 
 ## Fresnel Effect
+
 The final thing I want to show is a really cool phenomenon called the Fresnel Effect.
 
 In short, the Fresnel Effect describes the tendency for surfaces to get more reflective as you get closer to parallel to them. You can see this effect when looking at a wide variety of surfaces, but I'll use the surface of a lake as an example here. When standing on the shore and staring at the water, the closer to your feet you look, the closer to perpendicular your viewing angle will be to the surface, and the less reflective the water will appear. Staring out farther from shore, the opposite is true, and the water will appear almost mirror-like. You can see this in the image below. The sand beneath the water can be seen near the bottom of the image, but not farther away, where the reflections of the mountains and sky can be seen instead.
@@ -112,13 +121,14 @@ In short, the Fresnel Effect describes the tendency for surfaces to get more ref
 
 The Fresnel Effect is described mathematically by the [Fresnel Equations](https://en.wikipedia.org/wiki/Fresnel_equations), which calculate the ratio of light that is reflected when striking a surface. The formula returns higher reflectance values for incident rays that are closer to parallel with the struck surface, hence the Fresnel Effect. In the case of the simulation, we compute this reflectance value (or rather, [Schlick's Approximation](https://en.wikipedia.org/wiki/Schlick%27s_approximation)) every time a ray strikes an object. From there, we cast a new ray for the reflected component and scale its intensity based on the computed value. This ray constitutes the specular component of the reflection.
 
-By subtracting the reflectance value from one, we get the amount of incident light that is transmitted into the struck surface. As discussed in the previous section, this component is entirely absorbed by metallic materials. For non-metallic materials, we scatter a second ray in a random direction  and scale its intensity by the transmittance ratio times some constant positive factor that's less than one (to simulate loss of energy from absorbtion). This constitutes the diffuse component of the reflection.
+By subtracting the reflectance value from one, we get the amount of incident light that is transmitted into the struck surface. As discussed in the previous section, this component is entirely absorbed by metallic materials. For non-metallic materials, we scatter a second ray in a random direction and scale its intensity by the transmittance ratio times some constant positive factor that's less than one (to simulate loss of energy from absorbtion). This constitutes the diffuse component of the reflection.
 
-{% include autoplay_mp4.html path='/videos/literal_raytracer/fresnel.mp4' %} 
+{% include autoplay_mp4.html path='/videos/literal_raytracer/fresnel.mp4' %}
 
 Above, you can see three lights striking three identical planes made of a blue non-metallic material. You can see that each object reflects both diffuse (blue) and specular (white) rays, but the ratio of blue to white is different for each object. The closer the object gets to being parallel with the light source, the more rays are reflected specularly rather than entering the material and being scattered as part of the diffuse reflection. That's the Fresnel Effect in action.
 
 # Closing Thoughts
+
 This was a really fun project to work on. I had some familiarity with material properties before, but I think that seeing how light bounces around "behind the scenes" really helped deepen my understanding. Now I often find myself looking around at various surfaces, trying to follow the path of light through the environment.
 
 If you'd like to mess around with the simulation yourself, you can get the Unity project source [on github.](https://github.com/csun/literal_raytracer) It might be a fun project to try converting it to use the GPU more effectively, so that rays could be cast more quickly. It'd be cool to see these sorts of simulations in realtime with moving objects and cameras, but that would require quite a big performance upgrade.

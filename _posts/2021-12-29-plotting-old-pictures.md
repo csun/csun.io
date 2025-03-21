@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Generative Art: Pen Plotting an Old Family Photo"
-excerpt: In this post, I document all of the steps I took to turn an old picture into a piece of plotter art. I assume basic familiarity with command line tools, but otherwise hope most reasonably computer-literate people will be able to follow along and generate some art of their own.
+permalink: /2021/12/29/plotting-old-pictures.html
+description: Turning family history into art.
+category: visual
 ---
+
 ![](/images/plotter_portrait/unframed_full.jpg)
 A portrait of my dad, aunt, and grandfather. The piece is a heavily processed and vectorized version of an old photo of the three of them, plotted on watercolor paper.
 {:.img-caption}
@@ -16,6 +19,7 @@ While looking through old family photos, I really fell in love with one of my da
 In this post, I document all of the steps I took to turn an old picture into a piece of plotter art. I assume basic familiarity with command line tools, but otherwise hope most reasonably computer-literate people will be able to follow along and generate some art of their own.
 
 # Image Vectorization
+
 Plotters are essentially robot line-drawing machines. Given a list of lines and curves, a plotter will physically move a pen around a piece of paper and draw each one. The one big advantage of plotting vs. printing is that images can be plotted at any size with no loss in resolution. Whereas normal printed images will start to show their individual pixels when blown up to a large size, plotted images will keep their smooth, continuous lines without becoming blocky or jagged.
 
 Cameras do not output lines and curves directly - they output pixels (or exposed film which is converted to pixels 50 years later.) As such, normal image files cannot be drawn by plotters. Instead, any image that you want to plot using a pen plotter needs to first be converted from pixels to lines and curves. This conversion process is called vectorization, as we're converting from a [raster](https://en.wikipedia.org/wiki/Raster_graphics) (pixel-based) image format to a [vector](https://en.wikipedia.org/wiki/Vector_graphics) (shape-based) one. Here's the original raster image that I want to vectorize:
@@ -77,6 +81,7 @@ The best way I've found to combat this is just to re-run generation a ton of tim
 As a final step, we can use some other `vpype` commands to clean up the vector file and get it ready for printing. By running `vpype read vector.svg scaleto 9in 9in filter -m 1mm linesort write --page-size 11inx15in --center final.svg`, we can scale the vector file to the right size, center it in the middle of an 11x15 page, and filter out any segments that are smaller than 1mm at the printed size (to clean up some more of those noisy overlapping lines I described above.) With that done, we can move on to actually plotting our vector file.
 
 # Plotting the Art
+
 I don't own a pen plotter, so finding a way to get the finished art piece onto paper was a bit challenging. As far as I can tell, there aren't many companies that do on-demand pen plotting like Ponoko et al. do for laser cutting and engraving. I tried to get in contact with [Bold Machines](https://www.boldmachines.com/) in New York, but they didn't respond to me for a long time and then told me that they were closed until the winter, which I took as a sign to look elsewhere (though hopefully they've reopened!)
 
 My next thought was to search around for pen plotter artists and who would be willing to plot my art. Eventually I found [Paul Rickards](https://shop.paulrickards.com/), who agreed to help. He was super responsive and had great answers to my questions. I ended up buying two 11x17in plots for $250, which he finished and shipped out to me within a week (along with some small pieces of his own art, which was a really nice touch.) I know from my search that some artists prefer not to plot other people's work, so I hope I'm not sending him unwanted business here, but otherwise highly recommend reaching out to him if you're looking to take on a similar project.
@@ -86,4 +91,3 @@ Because I hope to make more plotter art eventually, I also considered buying an 
 Now that it's done, I'm really happy with how the finished piece turned out. It's a nice way to remember my grandfather, and it makes me smile every time I see it. I gave the second copy to my dad as a Christmas gift, and hope it'll be a happy little memento for him as well.
 
 ![](/images/plotter_portrait/framed_full.jpg)
-
