@@ -1,14 +1,8 @@
 <div class="posts-list">
   <h1 class="category-heading">{{ include.heading }}</h1>
   {% for post in site.posts %}
-    {% if post.category == include.category %}
-      <div class="post-listing">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {% if post.description %}
-          - {{ post.description }}
-        {% endif %}
-        <div class="post-date">{{ post.date | date: '%B %d, %Y' }}</div>
-      </div>
+    {% if post.category == include.category and post.hide_in_category != true %}
+      {% include posts_list_element.html post=post %}
     {% endif %}
   {% endfor %}
 </div>

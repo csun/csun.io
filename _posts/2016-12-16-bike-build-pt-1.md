@@ -4,6 +4,7 @@ title: Building My Bike Part 1
 permalink: /2016/12/16/bike-build-pt-1.html
 description: Project vision and prepping the frame.
 category: other
+related: [bike-build-pt-2, bike-build-pt-3]
 ---
 
 In this series, I'll talk about how I painted and built a bike earlier this year. This post will explain how I found the bike frame and prepped it for painting.

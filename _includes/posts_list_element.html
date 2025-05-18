@@ -1,0 +1,16 @@
+<div class="post-listing">
+  <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+  {% if include.post.description %} - {{ include.post.description }} {% endif %}
+  <div class="post-date">{{ include.post.date | date: '%B %d, %Y' }}</div>
+  {% if include.post.related %}
+  <div class="post-related-outer">
+    {% for related in include.post.related %}
+      <div class="post-related-inner">
+        {% assign relatedposts = site.posts | where:'slug',related %}
+        {% assign relatedpost = relatedposts[0] %}
+        {% include posts_list_element.html post=relatedpost %}
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

@@ -11,10 +11,13 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
 
-permalink: /:categories/:title
+permalink: /:title
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
 
 sass:
   sass_dir: _sass
