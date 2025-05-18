@@ -4,6 +4,7 @@ title: Building a (Very) Custom Mechanical Keyboard
 permalink: /2018/07/16/custom-mechanical-keyboard.html
 description: The 1st iteration of the Ellipsis series of keyboards.
 category: keyboards
+related: [ellipsis-split-buildlog, ellipsis-split-v2]
 ---
 
 ![](/images/ellipsis_main.jpg)

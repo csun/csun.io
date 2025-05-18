@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Ellipsis Split Mechanical Keyboard Buildlog
+title: Ellipsis Split V1
 permalink: /2020/06/14/ellipsis-split-buildlog.html
 description: The 2nd iteration of my Ellipsis series of keyboards.
 category: keyboards
+hide_in_category: true
 ---
 
 ![](/images/ellipsis_split_buildlog/DSC07163.jpg)

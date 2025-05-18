@@ -4,6 +4,7 @@ title: Building My Bike Part 3
 permalink: /2017/07/11/bike-build-pt-3.html
 description: Choosing components and assembling the bike.
 category: other
+hide_in_category: true
 ---
 
 It's been about nine months since I finished building my bike, meaning that it's now experienced all four seasons that New England has to offer. She's holding up very well, though I've started to notice some minor spots of rust here and there.

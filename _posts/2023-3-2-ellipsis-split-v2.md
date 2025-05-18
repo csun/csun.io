@@ -4,6 +4,7 @@ title: Ellipsis Split V2
 permalink: /2023/03/02/ellipsis-split-v2.html
 description: The 3rd iteration of my Ellipsis series of keyboards.
 category: keyboards
+hide_in_category: true
 ---
 
 Here's my latest keyboard - the successor to the original [ellipsis split](/2020/06/14/ellipsis-split-buildlog.html) and [ellipsis](/2018/07/16/custom-mechanical-keyboard.html) keyboards I've made over the past few years.

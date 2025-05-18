@@ -4,6 +4,7 @@ title: Building My Bike Part 2
 permalink: /2017/01/06/bike-build-pt-2.html
 description: Painting a bike with a brush.
 category: other
+hide_in_category: true
 ---
 
 When I set out to build my bike, I decided to do all the work on the bike with my own hands. This included painting the bike, which I wanted to do mostly with a paint brush instead of spray cans. Painting a bike with a brush is an entirely doable, but tedious, project. I figured I'd document my process and mistakes, so that others may benefit from the lessons I've learned.
