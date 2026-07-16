@@ -1,5 +1,9 @@
 <div class="post-listing">
-  <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+  {% if include.post.external_url %}
+    <a href="{{ include.post.external_url }}">{{ include.post.title }}</a>
+  {% else %}
+    <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+  {% endif %}
   {% if include.post.description %} - {{ include.post.description }} {% endif %}
   <div class="post-date">{{ include.post.date | date: '%B %d, %Y' }}</div>
   {% if include.post.related %}

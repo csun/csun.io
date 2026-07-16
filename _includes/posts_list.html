@@ -1,8 +1,9 @@
 <div class="posts-list">
   <h1 class="category-heading">{{ include.heading }}</h1>
-  {% for post in site.posts %}
-    {% if post.category == include.category and post.hide_in_category != true %}
-      {% include posts_list_element.html post=post %}
+  {% assign entries = site.posts | concat: site.links | sort: 'date' | reverse %}
+  {% for entry in entries %}
+    {% if entry.category == include.category and entry.hide_in_category != true %}
+      {% include posts_list_element.html post=entry %}
     {% endif %}
   {% endfor %}
 </div>

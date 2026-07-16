@@ -11,6 +11,12 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
 
+# Entries listed on the homepage that live elsewhere. output: false keeps them
+# out of the built site and the feed; they exist only as listing metadata.
+collections:
+  links:
+    output: false
+
 permalink: /:title
 
 # Build settings
