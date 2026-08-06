@@ -10,7 +10,8 @@
   <div class="post-related-outer">
     {% for related in include.post.related %}
       <div class="post-related-inner">
-        {% assign relatedposts = site.posts | where:'slug',related %}
+        {% assign candidates = site.posts | concat: site.links %}
+        {% assign relatedposts = candidates | where:'slug',related %}
         {% assign relatedpost = relatedposts[0] %}
         {% include posts_list_element.html post=relatedpost %}
       </div>
